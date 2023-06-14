@@ -146,28 +146,28 @@
 </footer>
 <div id="footer-end">
     <div class="container">
-        <button class="btn btn-dark">sign up now!</button>
+        <a class="btn btn-dark" href="{{ route('comics.create') }}">sign up now!</a>
         <div class="footer-icons">
             <h5>follow us</h5>
             <ul>
                 <li>
                     <a href="">
-                        <img src="{{Vite::asset('resources/img/footer-facebook.png')}}" alt="">
+                        <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Vite::asset('resources/img/footer-twitter.png')}}" alt="">
+                        <img src={{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Vite::asset('resources/img/footer-youtube.png')}}" alt="">
+                        <img src={{ Vite::asset('resources/img/footer-youtube.png') }}" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="">       
-                        <img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" alt="">
+                        <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="">
                     </a>
                 </li>
                 <li>
