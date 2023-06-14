@@ -1,1 +1,171 @@
 @import '~bootstrap/scss/bootstrap';
+
+header{
+    height: 100px;
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            height: 80px;
+        }
+        nav{
+            height: 100%;
+            display: flex;
+            ul{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                li{
+                    list-style: none;
+                    margin-right: 10px;
+                    line-height: 97px;
+                    &.active{
+                        border-bottom: 3px solid $blue;
+                    }
+                    &.active a{
+                        color: $blue;
+
+                    }
+
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+main{
+    .jumbotron{
+        height: 400px;
+        background-image: url('../img/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        span{
+            padding: 7px;
+            position: absolute;
+            background-color: $blue;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            color: white;
+            bottom: -20px;
+            left: 20%;
+        }
+    }
+
+    .cards{
+        background-color: #1C1C1C;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+    }
+}
+.card{
+    width: calc(100% / 6 - 10px);
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    img{
+        height: 300px;
+        margin-bottom: 5px;
+    }
+}
+.utilities{
+    background-color: $blue;
+    padding: 20px 0;
+    ul{
+        li{
+            list-style-type: none;
+            img{
+                height: 80px;
+                margin-right: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+footer{
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container{
+        padding: 20px 0;
+        background-image: url("../img/dc-logo-bg.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        .footer-list{
+            width: 40%;
+            display: flex;
+            flex-wrap: wrap;
+            ul{
+                width: calc(100% / 3);
+                text-transform: capitalize;
+                h5{
+                    color: white;
+                    text-transform: uppercase;
+                }
+                a{
+                    text-decoration: none;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+#footer-end{
+    background-color: #303030;
+    height: 100px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        height: 100%;
+        button{
+            text-transform: uppercase;
+            border-color: $blue;
+        }
+        .footer-icons{
+            display: flex;
+            height: 100%;
+            align-items: center;
+
+            h5{
+                text-transform: uppercase;
+                color: $blue;
+                margin-right: 10px;
+            }
+            img{
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+            ul{
+                display: flex;
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
