@@ -18,8 +18,6 @@ class ComicSeeder extends Seeder
         $arrayComics = config('comics');
         
         foreach ($arrayComics as $elem) {
-            $str = implode(",", $elem['artists']);
-            $str2 = implode(",", $elem['writers']);
 
             $newComic = new Comic();
             $newComic->title = $elem['title'];
@@ -29,8 +27,6 @@ class ComicSeeder extends Seeder
             $newComic->series = $elem['series'];
             $newComic->sale_date = $elem['sale_date'];
             $newComic->type = $elem['type'];
-            $newComic->artists = $str;
-            $newComic->writers = $str2;
             $newComic->save();
         }
     }
