@@ -15,6 +15,13 @@
                                 <h6 class="card-title">{{$elem['series']}}</h6>
                             </div>
                         </a>
+                        <form action="{{ route('comics.destroy', ['comic' => $elem->id] ) }}" method="POST">
+                            @csrf
+
+                            @method('DELETE')
+
+                            <input type="submit" value="Cancella" class="btn btn-primary">
+                        </form>
                     </div>
             @endforeach
             
